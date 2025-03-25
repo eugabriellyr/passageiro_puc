@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pick_location_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <FrameLayout
+            android:id="@+id/banner_txt_indica"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:background="@drawable/banner_indicar"
+            android:layout_above="@+id/manutencao_end"
+            android:layout_marginBottom="0dp">
+            <ImageView
+                android:id="@+id/fecha"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_close"
+                android:tint="@color/white"
+                android:padding="5dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                tools:ignore="UseAppTint" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="121dp">
+
+                            <TextView
+                                android:id="@+id/txtindica"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="130dp"
+                                android:layout_marginTop="35dp"
+                                android:layout_marginEnd="5dp"
+                                android:text=" carregando... "
+                                android:textColor="#FFFFFF"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/titulo_indique_ganhe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginEnd="58dp"
+                                android:fontFamily="@font/clanpro_placa"
+                                android:gravity="center"
+                                android:text="Programa indique e ganhe!"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/manutencao_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/new_splash_btn_shape"
+            android:backgroundTint="@color/colorAccent"
+            android:orientation="vertical">
+            <!--daqui-->
+            <LinearLayout
+                android:layout_width="281dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:background="@drawable/new_splash_btn_shape"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation2_view"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/pin_animation" />
+
+                <TextView
+                    android:id="@+id/source"
+                    android:layout_width="205dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:text="@string/pickup_location"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+            <!--daqui-->
+
+
+            <LinearLayout
+                android:id="@+id/llDropLocationContainer"
+                android:layout_width="281dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="20dp"
+
+                android:background="@drawable/new_splash_btn_shape"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/pin_animation" />
+
+                <TextView
+                    android:id="@+id/destination"
+                    style="@style/MyButton.Primary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/new_splash_btn_shape"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="@string/where_to"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginVertical="@dimen/_210sdp"
+                android:background="#DCDBDB"
+                android:elevation="1dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:scaleType="center"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/llPickHomeAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/llPickHomeAddTxt"
+                    android:layout_width="264dp"
+                    android:layout_height="20dp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/documento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/aviso_libera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="carregando..."
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/enviar_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginVertical="@dimen/_210sdp"
+                android:background="@drawable/new_splash_btn_shape"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="1dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/logo"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginVertical="@dimen/_210sdp"
+                android:background="#DCDBDB"
+                android:elevation="1dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:scaleType="center"
+                    android:src="@drawable/trabalho" />
+
+                <TextView
+                    android:id="@+id/llPickWorkAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:text=""
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/llPickWorkAddTxt"
+                    android:layout_width="264dp"
+                    android:layout_height="20dp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblcupons"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/view_coupons"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cupons"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/favoritos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/favtodos"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/favorito1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:background="@drawable/favunico_mais"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/favorito2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:background="@drawable/favunico"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/favorito3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:background="@drawable/favunico"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/favorito4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:background="@drawable/favunico"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/favorito5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:background="@drawable/favunico"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/favorito6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:background="@drawable/favunico"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/favorito7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:background="@drawable/favunico"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/favorito8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:background="@drawable/favunico"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/favorito9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:background="@drawable/favunico"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/favorito10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:background="@drawable/favunico"
+            android:inputType="textPersonName"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtfav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/button_round_accent"
+        android:gravity="center"
+        android:text="Todos"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/llEstimatedFareContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEE"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/txtTar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#EEE"
+            android:visibility="gone"
+            android:fontFamily="@font/clanpro_medium"
+            android:gravity="start"
+            android:text="@string/estimated_fare"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_14" />
+        <TextView
+            android:id="@+id/txtSaldo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#EEE"
+            android:visibility="gone"
+            android:fontFamily="@font/clanpro_medium"
+            android:gravity="start"
+            android:text="@string/estimated_fare"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_14" />
+
+
+        <FrameLayout
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/circle_transparent">
+
+            <ImageView
+                android:id="@+id/estimated_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_5sdp"
+                app:srcCompat="@drawable/ic_car" />
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvEstimatedFare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#EEE"
+            android:fontFamily="@font/clanpro_medium"
+            android:gravity="end"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_12" />
+        <TextView
+            android:id="@+id/tvTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#EEE"
+            android:fontFamily="@font/clanpro_medium"
+            android:gravity="end"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_20" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoregistro"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/obs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite aqui obs. ou ponto de referência"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblcupons"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:gravity="start"
+                android:text="@string/coupon"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/view_coupons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_round_accent"
+                android:fontFamily="@font/clanpro_medium"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/view_coupon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout> -->
+
+
+        <LinearLayout
+            android:id="@+id/lblmudar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:text="@string/estimated_payment"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/estimated_payment_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:maxLines="1"
+                android:text="@string/cash"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_grey_round_border"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/clanpro_medium"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/change"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#fff"
+            android:background="@drawable/button_round_status_opened"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingStart="-7dp"
+                android:paddingEnd="0dp">
+
+                <CheckBox
+                    android:id="@+id/use_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="Usar Carteira      "
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/wallet_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="R$ 0.00"
+                    android:gravity="end"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lblportamalas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#F6F5F5"
+            android:visibility="gone"
+            android:background="@drawable/button_round_status_opened"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingStart="-7dp"
+                android:paddingEnd="0dp">
+
+                <CheckBox
+                    android:id="@+id/add_porta_malas"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/add_portamalas"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/valor_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="R$ 0.00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_12"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:paddingStart="-7dp"
+                android:paddingEnd="0dp">
+
+                <CheckBox
+                    android:id="@+id/add_pet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/add_pet"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/valor_addP"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/clanpro_narrnews"
+                    android:text="R$ 0.00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/schedule_ride"
+                android:textStyle="bold"
+                android:visibility="gone"
+                style="@style/MyButton.Primary"
+                android:text="@string/schedule_ride" />
+
+            <Button
+                android:id="@+id/ride_now"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                style="@style/MyButton.Primary"
+                android:text="@string/ride_now" />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:paddingStart="-7dp"
+            android:paddingEnd="0dp">
+
+            <TextView
+                android:id="@+id/bloqueado"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_grey_round_border"
+                android:gravity="center"
+                android:lines="5"
+                android:text="@string/bloq"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pg"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/button_round_accent"
+                android:text="Pagar agora"
+                android:textColor="@color/white" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

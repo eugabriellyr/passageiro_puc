@@ -1,0 +1,158 @@
+// DEUS É FIEL
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'maven-publish' // Adicionando Maven Publish
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+
+    signingConfigs {
+        release {
+            keyAlias 'meu-alias'
+            keyPassword '221106'
+            storeFile file("${rootDir}/app/jks/chave.jks")
+            storePassword '221106'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.melevi.rio"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 9
+        versionName "3.10.1"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+
+        resValue "string", "app_name", "Me Levi car"
+        resValue "string", "google_map_key", "AIzaSyDRTsYeFoP8LIxtz1E0F5MRKDjSXK6j-IA"
+        resValue "string", "default_notification_channel_id", "AAAAfF1CfVg:APA91bHvrRf0qlM6CCcIjTCBKkhGRHDANMEldFYpnWiFbi783uh3lvTwlXC2bToYnPIMihwR3xjVUv51JVhe5PM_JOPYBToAPmNzOUdCkJl5T0Jhd9uDgB7cb3Nq6Zh7Z1pNgUrSuS5l"
+
+        buildConfigField "String", "CONTA_PIX", '"063.469.381-69"'
+        buildConfigField "String", "ATUALIZA", '"https://play.google.com/store/apps/details?id=com.passageiro.puc"'
+        buildConfigField "String", "BASE_URL", '"https://melevicar.com.br/"'
+        buildConfigField "String", "BASE_IMAGE_URL", '"https://melevicar.com.br/storage/"'
+        buildConfigField "String", "TERMS_CONDITIONS", '"https://melevicar.com.br/termos.php/"'
+        buildConfigField "String", "SUPORTE_URL", '"https://melevicar.com.br/"'
+
+        buildConfigField "String", "DRIVER_PACKAGE", '"com.motorista.rio"'
+        buildConfigField "String", "CLIENT_SECRET", '"l6kp2zljL9uc217y7LuahtRKfZtFEaMCIs2WxUMp"'
+        buildConfigField "String", "CLIENT_ID", '"3"'
+        buildConfigField "String", "DEVICE_TYPE", '"android"'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "passageiro.apk"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'com.github.eugabriellyr:passageiro_puc:3.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'org.jetbrains:annotations:16.0.1'
+
+    // Biblioteca de máscara para telefone
+    implementation 'com.github.rtoshiro.mflibrary:mflibrary:1.0.0'
+
+    // Firebase
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+    implementation 'com.google.firebase:firebase-crashlytics:17.4.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Facebook
+    implementation 'com.facebook.android:facebook-login:5.13.0'
+
+    // Google Maps
+    implementation 'com.google.maps.android:android-maps-utils:2.0.3'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    // Networking (Retrofit)
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+
+    // Butter Knife (Dependency Injection)
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    // Glide (Imagens)
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.airbnb.android:lottie:3.4.2'
+    // implementation 'com.github.jkwiecien:EasyImage:3.2.0' //Tirei
+    
+
+    // Outros
+    implementation 'com.akexorcist:googledirectionlibrary:1.1.1'
+    // implementation 'com.github.himanshu-soni:ChatMessageView:1.0.7' //não funciona
+    
+
+    // Design Responsivo
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // Animações
+    implementation 'com.daimajia.easing:library:2.4@aar'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+    // Crashlytics antigo
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.crashlytics.sdk.android:answers:1.4.7'
+
+    // Debugging
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+
+    // Toasts bonitos
+    // implementation 'com.github.GrenderG:Toasty:1.4.0'
+    // implementation 'com.github.Grenderg:toasty:1.5.2'
+
+    // Compressor de imagens
+    implementation 'id.zelory:compressor:3.0.1'
+
+    // Indicador de Página RecyclerView
+    // implementation 'com.github.rdblue:indefinitepagerindicator:1.0.1' //Não funciona
+
+    // Efeitos de carregamento (Shimmer)
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.android.volley:volley:1.2.1' // Última versão disponível
+}

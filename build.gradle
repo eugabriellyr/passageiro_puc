@@ -1,0 +1,30 @@
+// Arquivo build.gradle no nível do projeto
+
+buildscript {
+    ext {
+        easyimageVersion = '2.0.4'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // 🔹 Adicionando o repositório JitPack
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.2' // Atualize se necessário
+        classpath 'com.google.gms:google-services:4.3.8'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.6.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // 🔹 Garantindo que todos os módulos tenham acesso ao JitPack
+    }
+}
+
+// Tarefa para limpar o build
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

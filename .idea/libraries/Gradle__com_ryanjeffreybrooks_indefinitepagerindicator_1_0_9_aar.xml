@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ryanjeffreybrooks:indefinitepagerindicator:1.0.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a3c9d4e41d91ef58efdf61e986ab8a2/jetified-indefinitepagerindicator-1.0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a3c9d4e41d91ef58efdf61e986ab8a2/jetified-indefinitepagerindicator-1.0.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a3c9d4e41d91ef58efdf61e986ab8a2/jetified-indefinitepagerindicator-1.0.9/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40a0b925a657a4b242aa889856446caa/jetified-indefinitepagerindicator-1.0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40a0b925a657a4b242aa889856446caa/jetified-indefinitepagerindicator-1.0.9/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/40a0b925a657a4b242aa889856446caa/jetified-indefinitepagerindicator-1.0.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ryanjeffreybrooks/indefinitepagerindicator/1.0.9/25b5778816ca3d865fa343c437aa9c4a9590d959/indefinitepagerindicator-1.0.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ryanjeffreybrooks/indefinitepagerindicator/1.0.9/63927d260e1fcf18bef87b01e4c8cd8460340d9a/indefinitepagerindicator-1.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#403E3E"
+    tools:context=".ui.adiciona_favorito.AddFavActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:id="@+id/lbl_banner_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fav_lista">
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/completeData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="@dimen/_7sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_7sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_7sdp"
+                android:text="ATENÇÃO! COMPLETE SEU CADASTRO."
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtFav"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_21sdp"
+                    android:layout_marginVertical="@dimen/_30sdp"
+                    android:text=""
+                    android:textColor="#FFC107"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txtFav2"
+                        android:layout_width="151dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_21sdp"
+                        android:layout_marginVertical="@dimen/_30sdp"
+                        android:text=""
+                        android:textColor="#FFC107"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/botaoregistro"
+                android:visibility="gone"
+                android:text="EDITAR LISTA " />
+
+            <Button
+                android:id="@+id/criar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaoregistro"
+                android:visibility="visible"
+                android:text="CRIAR NOVA LISTA" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.verifica_codigo.VerificaActivity">
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/includeToolbar"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clanpro_narrnews"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="0dp"
+                android:text="@string/crf"
+                android:textSize="18dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white" />
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtCf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/bg_grey_round_border"
+                    android:hint="@string/entrecodreferencia"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimaryText" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+   <!-- <Button
+        android:id="@+id/btnDonemotorista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="558dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/button_round_primary"
+        android:padding="8dp"
+        android:text="Motorista"
+        android:textColor="#000000" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnDonemotorista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/colorAccent"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_right"
+            tools:ignore="MissingClass" />
+
+
+        <TextView
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_120sdp"
+            android:text="@string/id_indicado"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--<Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="22dp"
+        android:background="@drawable/button_round_primary"
+        android:padding="8dp"
+        android:text="Proceguir"
+        android:textColor="#000000" />-->
+
+
+
+</RelativeLayout>

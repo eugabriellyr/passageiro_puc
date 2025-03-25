@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/dinhe"
+            android:title="@string/payment" />
+        <item
+            android:icon="@drawable/favorito"
+            android:id="@+id/favorito"
+            android:title="@string/favorito" />
+        <item
+            android:icon="@drawable/saude"
+            android:id="@+id/saude_educacao"
+            android:title="@string/saude" />
+        <item
+            android:icon="@drawable/comp"
+            android:id="@+id/nav_invite_friend"
+            android:title="@string/invite_friend" />
+        <item
+            android:icon="@drawable/motorista"
+            android:id="@+id/solicitacao_saque"
+            android:visible="false"
+            android:title="@string/sq" />
+        <item
+            android:icon="@drawable/minhas_v"
+            android:id="@+id/nav_your_trips"
+            android:visible="true"
+            android:title="@string/your_trips" />
+        <item
+            android:icon="@drawable/promocao"
+            android:id="@+id/nav_coupon"
+            android:title="@string/offer" />
+        <item
+            android:icon="@drawable/carteira"
+            android:id="@+id/nav_wallet"
+            android:title="@string/wallet" />
+        <item
+            android:icon="@drawable/bonus"
+            android:id="@+id/premio_bonus"
+            android:visible="false"
+            android:title="@string/premio_bonus" />
+        <item
+            android:icon="@drawable/historico"
+            android:id="@+id/nav_passbook"
+            android:title="@string/passbook" />
+
+        <item
+            android:icon="@drawable/marcar"
+            android:id="@+id/nav_settings"
+            android:title="@string/settings" />
+        <item
+            android:icon="@drawable/alto"
+            android:id="@+id/nav_notification"
+            android:title="@string/notification_manager" />
+        <item
+            android:icon="@drawable/historico"
+            android:id="@+id/documentos"
+            android:visible="false"
+            android:title="@string/doc" />
+        <item
+            android:icon="@drawable/ajuda"
+            android:id="@+id/nav_help"
+            android:title="@string/help" />
+        <item
+            android:icon="@drawable/delivery"
+            android:id="@+id/nav_delivery"
+            android:visible="false"
+            android:title="@string/delivery" />
+        <item
+            android:icon="@drawable/passageiro_convidar"
+            android:id="@+id/nav_share"
+            android:visible="false"
+            android:title="@string/share" />
+
+        <item
+            android:icon="@drawable/other"
+            android:id="@+id/nav_become_driver"
+            android:title="@string/become_driver" />
+        <item
+            android:icon="@drawable/other"
+            android:id="@+id/p_sos"
+            android:visible="false"
+            android:title="SOS" />
+
+
+        <item
+            android:icon="@drawable/sair"
+            android:id="@+id/nav_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

@@ -1,0 +1,9 @@
+jdk:
+  - openjdk11
+
+before_install:
+  - export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+  - java -version
+
+install:
+  - ./gradlew clean assembleRelease
